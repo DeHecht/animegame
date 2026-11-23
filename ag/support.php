@@ -1,0 +1,53 @@
+<?php
+/*
+ * Created on 24.07.2008
+ *
+ * @copyright (c) 2010 animegame.eu
+ * @license http://www.gnu.org/licenses/gpl-3.0.html GNU General Public Licence
+ *
+ */
+include_once('path.inc.php'); // get the path ;)
+include_once(ROOT_PATH.'/include/donate.inc.php');
+
+
+
+?>
+ <table width="100%">
+ 	<tr>
+ 		<th class="content">Supporting AG</th>
+ 	</tr>
+ 	<tr>
+ 		<td class="content">Das Animegame ist zu 100% kostenlos. Es gibt keine versteckten Kosten und auch keine Premium Accounts, die bestimmten Spielern Vorteile bringen.
+	 		Jedoch kostet der Server auf dem das Spiel läuft monatlich Geld. Hier sind alle Kosten im &Uuml;berblick:<br>
+	 		- Aktueller Server 59 Euro/Monat<br>
+	 		- Domains 3 Euro/Monat<br>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<th class="content">Serverkostenbarometer</th>
+ 	</tr>
+ 	<tr>
+ 		<td class="content" align="center" height="50px"><?php echo getSpendebarometer($main_db_name); ?></td>
+ 	</tr>
+ 	<tr>
+ 		<td class="content">Nat&uuml;rlich kannst du AG unterst&uuml;tzen, indem du keinen Werbeblocker nutzt und den Werbegrad auf Hardcore stellst. Es ist aber auch m&ouml;glich zu Spenden. Alle Einnahmen, also durch Werbung und Spenden werden zu 100% daf&uuml;r genutzt um die Kosten, die durch AG entstehen zu decken.</td>
+ 	</tr>
+ 	<tr>
+ 		<th class="content">Empfangene Spenden</th>
+ 	</tr>
+ 	<tr>
+ 		<td class="content">
+ 			<?php echo getSpenden($main_db_name); ?>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td align="center">
+ 			<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick" />
+				<input type="image" src="https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen � mit PayPal." />
+				<img alt="" border="0" src="https://www.paypal.com/de_DE/i/scr/pixel.gif" width="1" height="1" />
+				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----" />
+			</form>
+ 		</td>
+ 	</tr>
+ </table>

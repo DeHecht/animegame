@@ -1,0 +1,7 @@
+runde: HP = Wieviel runden;
+kaioken2: Stärke,def,speed = wieviel % du Stärke bekommst, HP,MP =wieviel % du verlierst davon.
+lose: Wert=xx% seiner HP verliert der Gegner.
+copy: wert=1 für copy (z.b Stärke 1 = er kopiert Stärke vom Gegner)
+majin: wert = x-0.5 damit der gegner es + bekommt dafür schlägt er sich selba.
+lose2: Stärke= chance
+tausch: stärke=chance

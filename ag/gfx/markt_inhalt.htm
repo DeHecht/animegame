@@ -1,0 +1,27 @@
+<!-- 1 form des styles -->
+<tr>
+
+<td  width="90" bgcolor="$FARBE">
+<!--Items-->
+<font>$ITEM</font></td><td width="37" bgcolor="$FARBE">
+<!-- Typ -->
+<font>$TYPE</font></td>
+		<td  width="56" bgcolor="$FARBE">
+<!-- Preis-->
+<font>$PREIS</font></td><td width="50" bgcolor="$FARBE">
+<!-- Anzahl -->
+<font>$ANZAHL</font></td><td  width="38" bgcolor="$FARBE">
+<!-- Info -->
+<font><a href='javascript:info($info_id)'>Info</a></font></td><td width="67" bgcolor="$FARBE">
+<!-- Stueck -->
+
+<input name="$ANZAHL1" type="text" value="0" size="1" maxlength="$MAXLENGTH" onkeyup="nachrechnen();">
+<input name="$ITEM_ID1" type="hidden" value="$ITEM_ID" size="1" maxlength="1">
+<input name="$PREIS1" type="hidden" value="$PREIS">
+
+	    	<a href='javascript: nix()'  onClick="button_plus('$ANZAHL1',$MAXNUMBER,1,$PREIS);"><img src="gfx/markt/push-plus.gif" border="0"></a>
+	    	<a href='javascript: nix()'  onClick="button_minus('$ANZAHL1',0,1,$PREIS);"><img src="gfx/markt/push-min.gif" border="0"></a>
+
+</td></tr>
+
+<!-- 1 ende -->

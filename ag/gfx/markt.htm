@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>Animegame Markt!</title>
+<link rel="stylesheet" type="text/css" href="gfx/markt/style.css">
+<script language="JavaScript" src="java/new_markt.js" type="text/javascript"></script>
+</head>
+<body
+background="gfx/markt/back_xx.jpg" OnLoad="preis();">
+<form action="markt.php" method="GET">
+<input type="hidden" name="id" value="1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td valign="top"><table border="0" cellpadding="0"
+        cellspacing="0">
+            <tr>
+                <td><font size="1" face="Arial"><img
+                src="gfx/markt/top_stor_xx.gif" width="137" height="33"></font></td>
+            </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+            <tr>
+                <td valign="top" width="136"
+                background="gfx/markt/storage_line.jpg"><table
+                border="0" width="136%">
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td valign="top" width="100%"><font>
+<!-- Storage -->
+			$STORE_ITEMS
+</font>
+<!-- Storage Ende-->
+</td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top"><img src="gfx/markt/storage_end.jpg"
+                width="136" height="20"></td>
+            </tr>
+        </table>
+        <p>&nbsp;</p>
+        <p>
+<!-- Preis abrechnung -->
+<font><strong><p id="preis"></p> <h2><input SRC="gfx/markt/kaufen2.gif" border="0" WIDTH="90" HEIGHT="50" TYPE="image"></h2> </strong></font></p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+<!-- Ende Preis --->
+    </td>
+        <td valign="top"><table border="0" cellpadding="0"
+        cellspacing="0" width="100%">
+            <tr>
+                <td align="right" valign="top"><font
+                color="#80FF00"><strong><map name="Map">
+				<area href="?as=markt&charm=$charm&ords=Schuhe" shape="rect" coords="0, 0, 64, 53">
+				<area href="?as=markt&charm=$charm&ords=Ruestung" shape="rect" coords="64, 4, 131, 54">
+				<area href="?as=markt&charm=$charm&ords=Helm" shape="rect" coords="133, 3, 192, 54">
+				<area href="?as=markt&charm=$charm&ords=Schild" shape="rect" coords="193, 2, 252, 54">
+				<area href="?as=markt&charm=$charm&ords=Schwert" shape="rect" coords="253, 1, 311, 54">
+				<area href="?as=markt&charm=$charm&ords=Trank" shape="rect" coords="312, 4, 380, 54">
+				</map>
+				<img src="gfx/markt/typ_1.jpg"
+                width="383" height="55" usemap="#Map" border="0"></strong></font></td>
+            </tr>
+            <tr>
+                <td>
+<!-- Kontostand -->
+<font><strong>Kontostand: $GELD</strong></font>
+<!-- Konto Ende-->
+</td>
+            </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" width="376">
+		<tr>
+			<td><img src="gfx/markt/line_top_clean.gif" width="376" border="0"></td>
+            	</tr>
+		<tr>
+			<td style="background-color:#e1ecca; font-size: 12px;">&nbsp;&nbsp;&nbsp;$HEADER_DATA</td>
+		</tr>
+		<tr>
+			<td><img src="gfx/markt/line_top_clean2.gif" width="376" border="0"></td>
+            	</tr>
+
+
+
+<!-- 1 form des styles! -->
+            <tr>
+                <td valign="top" width="376"
+                background="gfx/markt/line_middl.gif"><table
+                border="0" cellpadding="0" cellspacing="0"
+                width="376">
+                    <tr>
+                        <td valign="top" width="3%"><font
+                        color="#DCE9D9" size="1" face="Arial"></font>&nbsp;</td>
+                        <td valign="top" width="100%">
+
+<table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td valign="top" width="356">
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<!-- 1 form des styles -->
+<tr>
+
+<td  width="90" bgcolor="$FARBE">
+<!--Items-->
+<b><a href="?as=markt&charm=$charm&ords=$ords&oder=name">Item:</a></b></td><td width="47" bgcolor="#A5B197">
+<!-- Typ -->
+<b><a href="?as=markt&charm=$charm&ords=$ords&oder=s_type">Type:</a></b></td>
+		<td  width="43" bgcolor="#A5B197">
+<!-- Preis-->
+<b><a href="?as=markt&charm=$charm&ords=$ords&oder=preis">Preise:</a></b></td><td width="40" bgcolor="#A5B197">
+<!-- Anzahl -->
+<b><a href="?as=markt&charm=$charm&ords=$ords&oder=anzahl">Anzahl:</a></b></td><td  width="37" bgcolor="#A5B197">
+<!-- Info -->
+<b>Info:</td><td width="109" bgcolor="#A5B197">
+<!-- Stueck -->
+<b>St&uuml;ck:</b>
+</td></tr>
+$ITEMS
+<tr>
+
+<td  width="90" bgcolor="">
+<!--Items-->
+</td><td width="47" bgcolor="">
+<!-- Typ -->
+</td>
+		<td  width="43" bgcolor="">
+<!-- Preis-->
+</td><td width="40" bgcolor="">
+<!-- Anzahl -->
+</td><td  width="37" bgcolor="">
+<!-- Info -->
+</td><td width="109" height="30" bgcolor="">
+<!-- Stueck -->
+<b>Seite: $seiten</b>
+</td></tr>
+
+
+</table>
+
+
+                                </td>
+                            </tr>
+
+
+                        </table>
+
+                        </td><td valign="top" width="3%"></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="gfx/markt/line_end.gif" width="376"
+                height="23"></td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

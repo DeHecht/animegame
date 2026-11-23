@@ -1,0 +1,23 @@
+<script type="text/javascript">
+function admin()
+{
+	var Info = window.open("admin/index.php","","status=no,hotkeys=no,Height=600,Width=820,scrollbars=yes");
+}
+</script>
+
+
+
+
+<a href='http://by.onlineplayers.de/boards/forumdisplay.php?s=&forumid=254' target="_blank"  title="Brand neue News auf dem Animegame.de Board"> Forum</a><br>
+
+<a href="<?php $PHP_SELF ?>?as=info/help">FAQ</a><br>
+
+
+<?php
+if($name == "Vegeta") {
+?>
+<a href='javascript:admin()'>Admin System</a>
+<?
+}
+?>
+</ul>

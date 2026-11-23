@@ -1,0 +1,70 @@
+<html>
+
+<body>
+
+   <form action="grandline_option.php?charm=1" method="post">
+  <table  width="201" height="405"  background="bilder/grandline.jpg">
+    <tr>
+      <td width="201" height="30" colspan="2">
+      <p align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="201" height="75" colspan="2">
+      <p align="center">$LOGO</td>
+    </tr>
+    <tr>
+      <td width="201" height="25" colspan="2">
+      <p align="center"><b>Crew</b></td>
+    </tr>
+    <tr>
+      <td width="201" height="25" colspan="2">
+      <p align="center">$clan[clanname]</td>
+    </tr>
+    <tr>
+      <td width="47" height="25">&nbsp;Feld: </td>
+      <td width="148" height="25">&nbsp;$MYFELD</td>
+    </tr>
+    <tr>
+      <td width="47" height="25">&nbsp;Reise:</td>
+      <td width="148" height="25">&nbsp;<select name="reisen">
+      <option value="1" $REISE_SELECT1>1 Feld weiter
+      <option value="2" $REISE_SELECT2>2 Felder weiter
+      <option value="3" $REISE_SELECT3>hier warten
+      <option value="4" $REISE_SELECT4> Hier Schatz Suchen
+      </select>
+
+      </td>
+    </tr>
+    <tr>
+      <td width="47" height="25">&nbsp;Reise2:</td>
+      <td width="148" height="25">&nbsp;<select name="reisen2">
+      <option value="0" $KAMPF_SELECT2>nicht K&auml;mpfen
+      <option value="1" $KAMPF_SELECT1>immer K&auml;mpfen
+      </select></td>
+    </tr>
+    <tr>
+      <td width="195" height="25" colspan="2">
+      <p align="center"><b>Extra Option</b></td>
+    </tr>
+    <tr>
+      <td width="47" height="25">&nbsp;Heilen</td>
+      <td width="148" height="25">&nbsp;
+      <select name="heal">
+      <option value="0">Nix
+      <option value="1">Crew 50% Heilen
+      <option value="2">Crew 75% Heilen
+      <option value="3">Crew 100% Heilen
+      </select>
+
+      </td>
+    </tr>
+<tr>
+      <td width="47" height="25">&nbsp;</td>
+      <td width="148" height="25">&nbsp;<input type="submit" value="Speichern"></form>      </td>
+    </tr>
+      </table>
+
+
+</body>
+
+</html>

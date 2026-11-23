@@ -1,0 +1,100 @@
+<html>
+<head>
+<script language="JavaScript" src="java/new_clan.js" type="text/javascript"></script>
+</head>
+<body>
+<form action="?as=clan/c_kampf&id=1" method="post">
+<table cellpadding="0" cellspacing="0" width="548" height="412">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="29" valign="top" colspan="5">
+		<p align="center"><b>Clan Kämpfe</b></td>
+	</tr>
+$TABELLE
+	<tr>
+		<td>
+		<p align="center"><b>Charakter 1</b></td>
+		<td height="25" colspan="4">&nbsp;
+		<select name="char1">
+		$option
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p align="center"><b>Charakter 2</b></td>
+		<td height="25" colspan="4">&nbsp; <select name="char2">$option
+		</select></td>
+	</tr>
+	<tr>
+		<td>
+		<p align="center"><b>Charakter 3</b></td>
+		<td height="25" colspan="4">&nbsp; <select name="char3">$option
+		</select></td>
+	</tr>
+	<tr>
+		<td>
+		<p align="center"><b>Charakter 4</b></td>
+		<td height="25" colspan="4">&nbsp; <select name="char4">$option
+		</select></td>
+	</tr>
+	<tr>
+		<td>
+		<p align="center"><b>Charakter 5</b></td>
+		<td height="25" colspan="4">&nbsp; <select name="char5">$option
+		</select></td>
+	</tr>
+	<tr>
+		<td>
+		<p align="center"><b>Charakter 6</b></td>
+		<td height="25" colspan="4">&nbsp; <select name="char6">$option
+		</select></td>
+	</tr>
+	<tr>
+		<td>
+		<p align="center"><b>Clan herausfordern.</b></td>
+		<td height="50" colspan="4">&nbsp; <select name="clan_name">
+											$CLAN_OPTION
+											</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p align="center">&nbsp;</td>
+		<td>
+		<p align="left"><b>in wievielen Tagen:</b></td>
+		<td height="25" valign="top" colspan="3"><b>Zeit</b></td>
+		</tr>
+	<tr>
+		<td>&nbsp;
+		</td>
+		<td valign="top">
+											<input name="tag" size="2" value="0" maxlength="2" readonly>
+		<td valign="top">
+											<font id="uhr">$std</font>:00:00 Uhr
+		<td valign="top">					<input name="uhr1" value="1" type="hidden">
+											<p align="left">
+											<a href='javascript: nix()'  onClick="button_plus('uhr',8);"><img src="gfx/markt/push-plus.gif" border="0"></a>
+									    	<a href='javascript: nix()'  onClick="button_minus('uhr',8,$MIN);"><img src="gfx/markt/push-min.gif" border="0"></a>
+
+											</td>
+		<td height="25">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td height="36" valign="top" colspan="4"><input type="submit" value="Herausfordern"></form></td>
+	</tr>
+	<tr>
+		<td width="143">&nbsp;</td>
+		<td width="151">&nbsp;</td>
+		<td width="68">&nbsp;</td>
+		<td width="198">&nbsp;</td>
+		<td height="72" width="4">&nbsp;</td>
+	</tr>
+</table>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

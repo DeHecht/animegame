@@ -1,0 +1,34 @@
+<html>
+<head>
+<script type="text/javascript" src="java/kampfchat.js" ></script>
+</head>
+
+<body onLoad="char($char_id1,$char_id2,$zeit_in_sek);">
+  <form action="" name="kampfchat" onsubmit="saveData(); return false;">
+  <table width="100%" height="172">
+    <tr>
+      <td width="510" height="38">
+      <p align="center"><div align="center" id="timer">L&auml;dt Zeit (<a href="kampf4.php?char_id=$char_id">Lädt noch?</a>)</div></td>
+    </tr>
+    <tr>
+      <td width="510" height="124" valign="top">&nbsp;
+
+       <div id="text_inhalt">
+       L&auml;dt...
+       </div>
+
+      </td>
+    </tr>
+    <tr>
+      <td width="510" height="38">&nbsp;<input name="textfeld" size="40" type="text">
+      <input type="hidden" name="char" value="$char_id" type="text">
+      <input type="hidden" name="user" value="$name" type="text">
+      <input type="submit" value="senden">
+	 
+      </form></td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
